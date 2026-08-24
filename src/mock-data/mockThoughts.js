@@ -1,6 +1,7 @@
 export const thoughtsData = [
   {
     id: 1,
+    type: "Thought",
     title: "Watching You Grow",
     date: "2020-04-18",
     thought:
@@ -10,6 +11,7 @@ export const thoughtsData = [
 
   {
     id: 2,
+    type: "Thought",
     title: "A Proud Mom Moment",
     date: "2020-06-12",
     thought:
@@ -19,6 +21,7 @@ export const thoughtsData = [
 
   {
     id: 3,
+    type: "Thought",
     title: "The Little Things",
     date: "2021-02-05",
     thought:
@@ -28,6 +31,7 @@ export const thoughtsData = [
 
   {
     id: 4,
+    type: "Thought",
     title: "Motherhood",
     date: "2021-07-28",
     thought:
@@ -37,6 +41,7 @@ export const thoughtsData = [
 
   {
     id: 5,
+    type: "Thought",
     title: "Your First Day of Pre-k",
     date: "2023-07-20",
     thought:
@@ -46,6 +51,7 @@ export const thoughtsData = [
 
   {
     id: 6,
+    type: "Thought",
     title: "A Simple Happy Day",
     date: "2023-10-14",
     thought:
@@ -55,6 +61,7 @@ export const thoughtsData = [
 
   {
     id: 7,
+    type: "Thought",
     title: "When You Need Me",
     date: "2024-07-02",
     thought:
@@ -64,6 +71,7 @@ export const thoughtsData = [
 
   {
     id: 8,
+    type: "Thought",
     title: "A Quiet Moment",
     date: "2025-05-25",
     thought:
@@ -73,6 +81,7 @@ export const thoughtsData = [
 
   {
     id: 9,
+    type: "Thought",
     title: "So Much to Be Thankful For",
     date: "2026-08-30",
     thought:
@@ -82,6 +91,7 @@ export const thoughtsData = [
 
   {
     id: 10,
+    type: "Thought",
     title: "My Little Sunshine",
     date: "2026-10-10",
     thought:

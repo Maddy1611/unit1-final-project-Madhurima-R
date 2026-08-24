@@ -1,0 +1,20 @@
+.homepage{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    padding: 20px
+}
+
+.header-box{
+    background-color: bisque;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px
+}
+
+.navigation-box{
+    background-color: bisque;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px
+}

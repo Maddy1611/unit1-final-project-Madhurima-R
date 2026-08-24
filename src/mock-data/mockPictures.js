@@ -1,6 +1,7 @@
 export const picturesData = [
     {
         id: 1,
+        type: "Picture",
         title: "Amy's First Birthday Decor",
         date: "2021-01-09",
         image: "src/assets/images/first birthday pic.jpg",
@@ -9,6 +10,7 @@ export const picturesData = [
     },
     {
         id: 2,
+        type: "Picture",
         title: "Amy's First step",
         date: "2021-01-29",
         image: "src/assets/images/first time walking pic.jpg",
@@ -17,6 +19,7 @@ export const picturesData = [
     },
     {
         id: 3,
+        type: "Picture",
         title: "Amy's first day of Kindergarten",
         date: "2025-08-19",
         image: "src/assets/images/Kindergarten pic.jpg",

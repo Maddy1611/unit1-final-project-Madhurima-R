@@ -11,11 +11,13 @@ function Homepage() {
     <div className='header-box'>
        <Header />
     </div>
+    <div className='main-layout'>
     <div className='navigation-box'>
        <Navigation />
     </div>
     <div className='dashboard-box'>
        <Dashboard />
+    </div>
     </div>
     <div className='footer-box'>
        <Footer/>

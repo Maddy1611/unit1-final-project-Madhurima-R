@@ -16,19 +16,6 @@ function Dashboard() {
     </Link>
     <br/>
 
-    <div className='memory-card'>
-      <div className='picture-card'>
-        <h2>PICTURES</h2>
-      </div>
-      <div className='thought-card'>
-        <h2>THOUGHTS</h2>
-      </div>
-      <div className='milestone-card'>
-        <h2>MILESTONES</h2>
-      </div>
-    </div>
-    <br/>
-
     <div className='recent-memories'>
         <RecentMemory />
         <p>memory component goes here - still working on that</p>

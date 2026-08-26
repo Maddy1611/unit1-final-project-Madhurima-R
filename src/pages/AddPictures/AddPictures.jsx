@@ -28,7 +28,7 @@ function AddPictures() {
         <h3>Add your picture memory here</h3>
         <form className='add-picture-memory' onSubmit={handleSubmit}>
 
-            <label>Title:</label>
+            <label htmlFor="title">Title:</label>
             <input
             id = "title"
             name = "title"

@@ -4,6 +4,7 @@ import './App.css'
 import Homepage from './pages/Homepage/Homepage'
 import AddMemory from './pages/AddMemory/AddMemory'
 import AddPictures from './pages/AddPictures/AddPictures'
+import AddThoughts from './pages/AddThoughts/AddThoughts'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Route path="/" element={<Homepage/>}/>
     <Route path="add-memory" element={<AddMemory/>}/>
     <Route path="add-pictures" element={<AddPictures/>}/>
+    <Route path="add-thoughts" element={<AddThoughts/>}/>
     </Routes>
   )
 }

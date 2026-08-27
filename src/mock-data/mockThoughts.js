@@ -99,3 +99,5 @@ export const thoughtsData = [
     feeling: "Happy"
   }
 ];
+
+export default thoughtsData

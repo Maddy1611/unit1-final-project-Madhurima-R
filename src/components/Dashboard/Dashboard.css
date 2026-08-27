@@ -1,0 +1,18 @@
+
+.dashboard-main{
+    background-color: azure;
+    border-radius: 30px;
+}
+
+.dashboard-top{
+    display: flex;
+}
+
+.welcome-card{
+    padding: 20px;
+}
+
+.add-memory-button{
+    padding: 20px;
+
+}

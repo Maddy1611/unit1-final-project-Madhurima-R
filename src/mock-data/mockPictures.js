@@ -27,3 +27,5 @@ export const picturesData = [
         feeling: "Proud and Happy"
     }
 ];
+
+export default picturesData

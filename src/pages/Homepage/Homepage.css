@@ -2,7 +2,8 @@
     background-color: beige;
     display: flex;
     flex-direction: column;
-    padding: 20px
+    padding: 20px;
+    gap: 20px;
 }
 
 .header-box{
@@ -26,4 +27,8 @@
 .dashboard-box{
     flex: 1;
     padding: 20px
+}
+
+.footer-box{
+    text-align: center;
 }

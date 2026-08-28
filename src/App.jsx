@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage/Homepage'
 import AddMemory from './pages/AddMemory/AddMemory'
 import AddPictures from './pages/AddPictures/AddPictures'
 import AddThoughts from './pages/AddThoughts/AddThoughts'
+import Pictures from './pages/Pictures/Pictures'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Route path="add-memory" element={<AddMemory/>}/>
     <Route path="add-pictures" element={<AddPictures/>}/>
     <Route path="add-thoughts" element={<AddThoughts/>}/>
+    <Route path="/pictures" element={<Pictures />}/>
     </Routes>
   )
 }

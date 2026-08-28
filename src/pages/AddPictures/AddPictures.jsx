@@ -1,6 +1,8 @@
 import {useState} from 'react'
+import FeelingsButton from '../../components/Buttons/FeelingsButton';
 
 function AddPictures() {
+    const [feeling, setFeeling] = useState("");
     const [data, setData] = useState({
         title: "",
         date: "",
@@ -20,9 +22,17 @@ function AddPictures() {
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-        console.log(data);
+
+    if(!data.title || !data.description || !feeling) {
+        alert("Please enter required fields.");
+        return;
     }
-    
+    const memory = {
+        ...data,
+        feeling: feeling,
+    };
+    console.log(memory);
+    }
   return (
     <div>
         <h3>Add your picture memory here</h3>
@@ -68,7 +78,35 @@ function AddPictures() {
             required
             />
 
+            <h4>How are you feeling</h4>
+            <FeelingsButton
+            feeling="Happy"
+            emoji="😊"
+            selectedFeeling={feeling}
+            setSelectedFeeling={setFeeling}
+            />
+            <FeelingsButton
+            feeling="Sad"
+            emoji="😢"
+            selectedFeeling={feeling}
+            setSelectedFeeling={setFeeling}
+            />
+            <FeelingsButton
+            feeling="Excited"
+            emoji="🤩"
+            selectedFeeling={feeling}
+            setSelectedFeeling={setFeeling}
+            />
+            <FeelingsButton
+            feeling="Proud"
+            emoji="💪"
+            selectedFeeling={feeling}
+            setSelectedFeeling={setFeeling}
+            />
+
+
             <button type="submit">Save Memory</button>
+            <h3>Memory Saved</h3>
         </form>
     </div>
   )

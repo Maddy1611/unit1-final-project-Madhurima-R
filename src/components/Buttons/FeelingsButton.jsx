@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FeelingsButton({feeling, emoji}) {
+function FeelingsButton({feeling, emoji, selectedFeeling, setSelectedFeeling}) {
   return (
     <button
     type="button"

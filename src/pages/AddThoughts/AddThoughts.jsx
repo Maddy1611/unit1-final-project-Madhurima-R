@@ -1,6 +1,8 @@
 import {useState} from 'react'
+import FeelingsButton from '../../components/Buttons/FeelingsButton';
 
 function AddThoughts() {
+    const [feeling, setFeeling] = useState("");
    const [data, setData] = useState({
         title: "",
         date: "",
@@ -57,6 +59,32 @@ const handleChange = (event) =>{
             placeholder="Write your thoughts here"
             required
             />
+
+            <h4>How are you feeling</h4>
+              <FeelingsButton
+                feeling="Happy"
+                emoji="😊"
+                selectedFeeling={feeling}
+                setSelectedFeeling={setFeeling}
+                />
+                <FeelingsButton
+                feeling="Sad"
+                emoji="😢"
+                selectedFeeling={feeling}
+                setSelectedFeeling={setFeeling}
+                />
+                <FeelingsButton
+                feeling="Excited"
+                emoji="🤩"
+                selectedFeeling={feeling}
+                setSelectedFeeling={setFeeling}
+                />
+                <FeelingsButton
+                feeling="Proud"
+                emoji="💪"
+                selectedFeeling={feeling}
+                setSelectedFeeling={setFeeling}
+                />
     </div>
   )
 }

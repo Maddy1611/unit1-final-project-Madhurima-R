@@ -7,6 +7,7 @@ import AddPictures from './pages/AddPictures/AddPictures'
 import AddThoughts from './pages/AddThoughts/AddThoughts'
 import Pictures from './pages/Pictures/Pictures'
 import Thoughts from './pages/Thoughts/Thoughts'
+import Milestones from './pages/Milestones/Milestones'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Route path="add-thoughts" element={<AddThoughts/>}/>
     <Route path="/pictures" element={<Pictures />}/>
     <Route path="/thoughts" element={<Thoughts />}/>
+    <Route path="/milestones" element={<Milestones />}/>
     </Routes>
   )
 }

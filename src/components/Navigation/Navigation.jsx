@@ -2,6 +2,8 @@ import React from 'react'
 import "./Navigation.css"
 import {Link} from 'react-router'
 import Pictures from '../../pages/Pictures/Pictures'
+import Thoughts from '../../pages/Thoughts/Thoughts'
+import Milestones from '../../pages/Milestones/Milestones'
 
 function Navigation() {
   return (
@@ -10,7 +12,7 @@ function Navigation() {
 <br/>
 <Link to ='/Thoughts'>Thoughts</Link>
 <br/>
-<a href='Milestones'>Milestones</a>
+<Link to ='/Milestones'>Milestones</Link>
 <br/>
 <a href='AboutUs'>About Us</a>
 <br/>

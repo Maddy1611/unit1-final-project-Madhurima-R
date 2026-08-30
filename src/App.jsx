@@ -10,6 +10,7 @@ import Pictures from './pages/Pictures/Pictures'
 import Thoughts from './pages/Thoughts/Thoughts'
 import Milestones from './pages/Milestones/Milestones'
 import AboutUs from './pages/AboutUs/AboutUs'
+import ContactUs from './pages/ContactUs/ContactUs'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
     <Route path="/thoughts" element={<Thoughts />}/>
     <Route path="/milestones" element={<Milestones />}/>
     <Route path="/aboutus" element={<AboutUs />}/>
+    <Route path="/contactus" element={<ContactUs />}/>
     </Routes>
   )
 }

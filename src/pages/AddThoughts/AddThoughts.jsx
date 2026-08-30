@@ -32,7 +32,7 @@ const handleChange = (event) =>{
             <Header />
         </div>
        <h3>Add your thoughts here:</h3>
-       <form className='add-thoughts' onSubmit={handleSubmit}></form>
+       <form className='add-thoughts' onSubmit={handleSubmit}>
 
        <label htmlFor="title">Title:</label>
             <input
@@ -89,8 +89,10 @@ const handleChange = (event) =>{
                 selectedFeeling={feeling}
                 setSelectedFeeling={setFeeling}
                 />
-    </div>
-  )
-}
+<button type="submit">Save Memory</button>
+</form>
+</div>
+    
+  )}
 
 export default AddThoughts

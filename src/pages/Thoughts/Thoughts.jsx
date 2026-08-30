@@ -1,10 +1,16 @@
 import React from 'react'
 import thoughtsData from '../../mock-data/mockThoughts'
 import "./Thoughts.css"
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
+
 
 function Thoughts() {
   return (
     <div className='thoughts'>
+      <div className='header-box'>
+            <Header />
+        </div>
       <h3>Feel how you felt then-</h3>
 
     <div className='thoughts-grid'>
@@ -19,6 +25,9 @@ function Thoughts() {
           </div>
       ))}
     </div>
+     <div className='footer-box'>
+            <Footer />
+        </div>
     </div>
   )
 }

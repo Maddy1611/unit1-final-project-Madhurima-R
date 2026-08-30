@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
+import Header from '../../components/Header/Header';
 
 function AddMilestones() {
     const [feeling, setFeeling] = useState("");
@@ -24,6 +25,9 @@ const handleChange = (event) =>{
 
   return (
     <div>
+        <div className='header-box'>
+            <Header />
+        </div>
        <h3>Add your milestones here:</h3>
        <form className='add-milestones' onSubmit={handleSubmit}></form>
 

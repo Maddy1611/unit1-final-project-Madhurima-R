@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
+import Header from '../../components/Header/Header';
 
 function AddThoughts() {
     const [feeling, setFeeling] = useState("");
@@ -27,6 +28,9 @@ const handleChange = (event) =>{
 
   return (
     <div>
+      <div className='header-box'>
+            <Header />
+        </div>
        <h3>Add your thoughts here:</h3>
        <form className='add-thoughts' onSubmit={handleSubmit}></form>
 

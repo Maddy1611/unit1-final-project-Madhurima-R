@@ -1,8 +1,14 @@
 
+.your-memories{
+    background-color: rgb(252, 167, 214);
+}
+
 .memory-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .memory-card {
@@ -16,4 +22,23 @@
     height: 200px;
     border-radius: 20px;
     object-fit: cover;
+}
+
+.first-memory{
+    background-color: bisque;
+    border-radius: 20px;
+}
+.second-memory{
+    background-color: rgb(247, 247, 104);
+    border-radius: 20px;
+}
+
+.third-memory{
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+.fourth-memory{
+    background-color:  rgb(247, 247, 104);
+    border-radius: 20px;
 }

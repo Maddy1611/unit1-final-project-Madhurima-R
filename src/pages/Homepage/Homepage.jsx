@@ -8,11 +8,10 @@ import Navigation from '../../components/Navigation/Navigation'
 function Homepage() {
   return (
     <div className='homepage'>
-
-    <div className='header-box'>
-       <Header />
-    </div>
-
+ <div className='header-box'>
+            <Header />
+        </div>
+  
     <div className='main-layout'>
     <div className='navigation-box'>
        <Navigation />
@@ -21,10 +20,10 @@ function Homepage() {
        <Dashboard />
     </div>
     </div>
-    
-    <div className='footer-box'>
-       <Footer/>
-    </div>
+
+     <div className='footer-box'>
+            <Footer />
+        </div>
     </div>
   )
 }

@@ -1,10 +1,16 @@
 import React from 'react'
 import picturesData from '../../mock-data/mockPictures'
 import './Pictures.css'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
 function Pictures() {
   return (
+    
     <div className='pictures'>
+       <div className='header-box'>
+            <Header />
+        </div>
       <h3>See what you saw then:</h3>
 
     <div className='pictures-grid'>
@@ -27,6 +33,9 @@ function Pictures() {
     </div>
       ))}
 </div>
+ <div className='footer-box'>
+            <Footer />
+        </div>
 </div>
   )
 }

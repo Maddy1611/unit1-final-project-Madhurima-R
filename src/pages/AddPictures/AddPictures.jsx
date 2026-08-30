@@ -1,7 +1,9 @@
 import {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
+import Header from '../../components/Header/Header';
 
 function AddPictures() {
+
     const [feeling, setFeeling] = useState("");
     const [data, setData] = useState({
         title: "",
@@ -22,7 +24,6 @@ function AddPictures() {
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-
     if(!data.title || !data.description || !feeling) {
         alert("Please enter required fields.");
         return;
@@ -30,11 +31,15 @@ function AddPictures() {
     const memory = {
         ...data,
         feeling: feeling,
-    };
-    console.log(memory);
     }
+    console.log(memory);
+    };
+
   return (
     <div>
+        <div className='header-box'>
+            <Header />
+        </div>
         <h3>Add your picture memory here</h3>
         <form className='add-picture-memory' onSubmit={handleSubmit}>
 
@@ -78,7 +83,9 @@ function AddPictures() {
             required
             />
 
-            <h4>How are you feeling</h4>
+            <label>Choose a feeling</label>
+            <div className='feelings-button'>
+
             <FeelingsButton
             feeling="Happy"
             emoji="😊"
@@ -89,26 +96,25 @@ function AddPictures() {
             feeling="Sad"
             emoji="😢"
             selectedFeeling={feeling}
-            setSelectedFeeling={setFeeling}
+            onClick={setFeeling}
             />
             <FeelingsButton
             feeling="Excited"
             emoji="🤩"
             selectedFeeling={feeling}
-            setSelectedFeeling={setFeeling}
+            onClick={setFeeling}
             />
             <FeelingsButton
             feeling="Proud"
             emoji="💪"
             selectedFeeling={feeling}
-            setSelectedFeeling={setFeeling}
+            onClick={setFeeling}
             />
-
+            </div>
 
             <button type="submit">Save Memory</button>
         </form>
     </div>
-  )
-}
+)}
 
-export default AddPictures
+export default AddPictures;

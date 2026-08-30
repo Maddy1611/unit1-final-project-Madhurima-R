@@ -4,11 +4,12 @@
     background-position: contain;
     background-size: 700px;
     display: flex;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     position: relative;
+    border-radius: 10px;
 }
-
 .header img{
     position: absolute;
     left: 30px;
@@ -31,5 +32,11 @@
 .heading-box h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(15, 2, 88);
-    font-size: 60px;
+    font-size: 40px;
+}
+
+.home-link{
+    text-align: right;
+    right: 80px;
+    position: absolute;
 }

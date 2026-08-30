@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import "./Dashboard.css"
 import RecentMemory from '../RecentMemory/RecentMemory'
 import memoryJarLogo from '../../assets/memory-jar-logo.png'
+import milestonesData from '../../mock-data/mockMilestone'
 
 function Dashboard() {
   return (
@@ -10,20 +11,32 @@ function Dashboard() {
     <div className='dashboard-top'>
 
     <div className='welcome-card'>
-      <h2>Welcome Back</h2>
-      <h3>Memories are created here!</h3>
+      <h2>Welcome Back!</h2>
+      <h3>Your Memory Jar is waiting</h3>
+      <p><em>Fill it with moments & memories, you never want to forget</em></p>
     </div>
-    <br/>
 
+    <div className='add-memory-box'>
     <Link to="/add-memory" className='add-memory-button'>
-       + Add Memory 
-        <img src = {memoryJarLogo} alt = "Memory Jar Logo" className = "memory-jar-logo" width = "80" height = "100" />
+       + Add Memory 💕
     </Link>
-    <br/>
+    </div>
     </div>
 
     <div className='recent-memories'>
         <RecentMemory />
+    </div>
+
+    <div className='display-milestones'>
+      {milestonesData.slice(0,5).map((milestones) =>(
+              <div className="display-card">
+                  <h3>{milestones.title}</h3>
+                  <p>{milestones.date}</p>
+                 <div className="memory-feeling">
+                  {milestones.emoji}{milestones.feeling}
+                 </div>
+              </div>
+      ))}
     </div>
     </div>
 )

@@ -1,10 +1,15 @@
 import React from 'react'
 import milestonesData from '../../mock-data/mockMilestone'
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import "./Milestones.css"
 
 function Milestones() {
   return (
     <div className='milestones'>
+      <div className='header-box'>
+            <Header />
+        </div>
       <h3>Look how you have grown:</h3>
       <div className='milestones-grid'>
         {milestonesData.map((milestone)=> (
@@ -17,6 +22,9 @@ function Milestones() {
           </div>
         ))}
       </div>
+       <div className='footer-box'>
+            <Footer />
+        </div>
     </div>
   );
 }

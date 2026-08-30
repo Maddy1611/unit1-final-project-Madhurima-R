@@ -3,7 +3,7 @@ import "./Footer.css"
 
 function Footer() {
   return (
-    <div className='footer-box'>
+    <div className='footer-box-main'>
         <p><em><strong>&copy; 2026 Memory Jar. || All Rights Reserved.</strong></em></p>
     </div>
   )

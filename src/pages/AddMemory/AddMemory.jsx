@@ -12,6 +12,9 @@ function AddMemory() {
             <Link to="/add-thoughts" className="memory-options">
             <h3>Add thoughts</h3>
             </Link>
+            <Link to="/add-milestones" className="memory-options">
+            <h3>Add milestones</h3>
+            </Link>
         </div>
     </div>
   )

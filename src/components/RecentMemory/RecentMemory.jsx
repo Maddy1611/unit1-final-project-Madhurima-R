@@ -13,6 +13,9 @@ return (
             <img src={picture.image} alt={picture.title}/>
             <h3>{picture.title}</h3>
             <p>{picture.description}</p>
+          <div className="memory-feeling">
+            {picture.emoji}{picture.feeling}
+          </div>
         </div>
     ))}
 
@@ -20,6 +23,9 @@ return (
         <div className="memory-card">
             <h3>{thoughts.title}</h3>
             <p>{thoughts.thought}</p>
+           <div className="memory-feeling">
+            {thoughts.emoji}{thoughts.feeling}
+           </div>
         </div>
     ))}
 </div>

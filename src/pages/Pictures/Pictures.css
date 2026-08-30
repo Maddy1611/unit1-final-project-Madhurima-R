@@ -1,5 +1,23 @@
+
+.pictures{
+    background-color: #fffaf7;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.pictures-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.picture-card{
+    background-color: bisque;
+    padding: 25px;
+}
 .picture-card img{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px
+    
 }

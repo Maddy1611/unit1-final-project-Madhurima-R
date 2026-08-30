@@ -10,15 +10,18 @@ function Pictures() {
     <div className='pictures-grid'>
       {picturesData.map((picture)=>(
         <div className='picture-card' key={picture.id}>
+
           <img
           src={picture.image}
           alt={picture.title}
           />
+
+        <div className='picture-details'>
           <h3>{picture.title}</h3>
           <p>{picture.date}</p>
           <p>{picture.description}</p>
           <p>{picture.feeling}</p>
-      ))
+          </div> 
     </div>
       ))}
 </div>

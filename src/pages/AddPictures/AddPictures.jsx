@@ -106,7 +106,6 @@ function AddPictures() {
 
 
             <button type="submit">Save Memory</button>
-            <h3>Memory Saved</h3>
         </form>
     </div>
   )

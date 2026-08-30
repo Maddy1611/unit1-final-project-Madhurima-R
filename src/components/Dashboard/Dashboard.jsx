@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import "./Dashboard.css"
 import RecentMemory from '../RecentMemory/RecentMemory'
+import memoryJarLogo from '../../assets/memory-jar-logo.png'
 
 function Dashboard() {
   return (
@@ -15,7 +16,8 @@ function Dashboard() {
     <br/>
 
     <Link to="/add-memory" className='add-memory-button'>
-       + Add Memory
+       + Add Memory 
+        <img src = {memoryJarLogo} alt = "Memory Jar Logo" className = "memory-jar-logo" width = "80" height = "100" />
     </Link>
     <br/>
     </div>

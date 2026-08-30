@@ -1,0 +1,19 @@
+
+.thoughts{
+    background-color: #fffaf7;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.thoughts-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.thoughts-card{
+    background-color: #ffe4c4;
+    border-radius: 20px;
+    color: rgb(5, 5, 85);
+    padding: 25px;
+}

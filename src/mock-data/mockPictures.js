@@ -6,7 +6,8 @@ export const picturesData = [
         date: "2021-01-09",
         image: "src/assets/images/first birthday pic.jpg",
         description: "Created Amy's first birthday decor myself. A beautiful memory that fills me with pride and nostalgia.",
-        feeling: "Proud and Happy"
+        feeling: "Proud",
+        emoji: "💪"
     },
     {
         id: 2,

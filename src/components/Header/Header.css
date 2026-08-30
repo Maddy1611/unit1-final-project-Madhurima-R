@@ -1,9 +1,12 @@
 .header{
-    position: relative;
+    height: 220px;
+    background-image: url("../../assets/Untitled design (4).png");
+    background-position: center;
+    background-size: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 10px
+    position: relative;
 }
 
 .header img{
@@ -17,11 +20,15 @@
 }
 
 .heading-box{
-    background-color: rgb(50, 223, 107);
     margin: 10px;
-    padding: 5px 10px;
+    padding: 5px 50px;
     border-radius: 10px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+}
+
+.heading-box h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(15, 2, 88);
 }

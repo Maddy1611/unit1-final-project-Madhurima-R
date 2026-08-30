@@ -15,6 +15,12 @@
     background-color: bisque;
     padding: 25px;
 }
+
+.picture-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
 .picture-card img{
     width: 250px;
     height: 250px;

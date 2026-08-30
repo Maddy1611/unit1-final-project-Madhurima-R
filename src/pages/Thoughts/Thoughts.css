@@ -17,3 +17,8 @@
     color: rgb(5, 5, 85);
     padding: 25px;
 }
+
+.thoughts-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}

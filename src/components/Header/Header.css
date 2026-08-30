@@ -1,7 +1,7 @@
 .header{
     height: 220px;
-    background-image: url("../../assets/Untitled design (4).png");
-    background-position: center;
+    background-image: url("../../assets/Untitled design (7).png");
+    background-position: contain;
     background-size: 700px;
     display: flex;
     align-items: center;
@@ -31,4 +31,5 @@
 .heading-box h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(15, 2, 88);
+    font-size: 60px;
 }

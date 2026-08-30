@@ -7,6 +7,7 @@
 
 .dashboard-top{
     display: flex;
+    
     justify-content: space-between;
     background-color: plum
 }

@@ -6,7 +6,8 @@ export const thoughtsData = [
     date: "2020-04-18",
     thought:
       "Sometimes I wish I could slow down time. Watching you grow is beautiful, but it reminds me how quickly these little moments pass.",
-    feeling: "Nostalgic"
+    feeling: "Sad",
+    emoji: "😢"
   },
 
   {
@@ -16,7 +17,8 @@ export const thoughtsData = [
     date: "2020-06-12",
     thought:
       "Today I watched you sit all by yourself, and my heart filled with pride. You are becoming such an independent little person.",
-    feeling: "Proud"
+    feeling: "Proud",
+    emoji: "💪"
   },
 
   {
@@ -26,7 +28,8 @@ export const thoughtsData = [
     date: "2021-02-05",
     thought:
       "It's the little things I want to remember most—the sleepy hugs, silly laughs, and bedtime stories.",
-    feeling: "Grateful"
+    feeling: "Grateful",
+    emoji: "💛"
   },
 
   {
@@ -36,7 +39,8 @@ export const thoughtsData = [
     date: "2021-07-28",
     thought:
       "My baby is down with fever but even then she is as happy as she could be. Motherhood has taught me that I can be exhausted and grateful, overwhelmed and happy, all at the same time.",
-    feeling: "Grateful"
+    feeling: "Grateful",
+    emoji: "💛"
   },
 
   {
@@ -46,7 +50,8 @@ export const thoughtsData = [
     date: "2023-07-20",
     thought:
       "Watching you take that big step into a new chapter made me realize how much you've grown. I was nervous, emotional, and incredibly proud.",
-    feeling: "Emotional"
+    feeling: "Proud",
+    emoji: "💪"
   },
 
   {
@@ -56,7 +61,8 @@ export const thoughtsData = [
     date: "2023-10-14",
     thought:
       "Nothing extraordinary happened today, but we laughed, played outside, and watched the colorful fall leaves together. Somehow, those are the days I treasure most.",
-    feeling: "Happy"
+    feeling: "Happy",
+    emoji: "😊"
   },
 
   {
@@ -66,7 +72,8 @@ export const thoughtsData = [
     date: "2024-07-02",
     thought:
       "No matter how big you get, I hope you always know that you can come to me. I will always be here for you.",
-    feeling: "Loved"
+    feeling: "Loved",
+    emoji: "💖"
   },
 
   {
@@ -76,7 +83,8 @@ export const thoughtsData = [
     date: "2025-05-25",
     thought:
       "You fell asleep in my arms tonight(after ages!), and for a moment everything felt still. I miss those newborn days and I wanted to remember exactly how this moment felt.",
-    feeling: "Peaceful"
+    feeling: "Peaceful",
+    emoji: "🌙"
   },
 
   {
@@ -86,7 +94,8 @@ export const thoughtsData = [
     date: "2026-08-30",
     thought:
       "Some days are messy and difficult, but then I look at you and remember how lucky I am to be your mom and that is all I need.",
-    feeling: "Thankful"
+    feeling: "Thankful",
+    emoji: "🙏"
   },
 
   {
@@ -96,7 +105,8 @@ export const thoughtsData = [
     date: "2026-10-10",
     thought:
       "I was having a tough day today but your smile can completely change my day. I hope you always know how much light you bring into my life.",
-    feeling: "Happy"
+    feeling: "Happy",
+    emoji: "😊"
   }
 ];
 

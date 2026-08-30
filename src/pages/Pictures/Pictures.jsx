@@ -20,7 +20,9 @@ function Pictures() {
           <h3>{picture.title}</h3>
           <p>{picture.date}</p>
           <p>{picture.description}</p>
-          <p>{picture.feeling}</p>
+          <p className='pictures.feeling'>
+          {picture.emoji}{picture.feeling}
+          </p>
           </div> 
     </div>
       ))}

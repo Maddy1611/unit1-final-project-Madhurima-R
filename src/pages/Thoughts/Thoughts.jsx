@@ -13,7 +13,9 @@ function Thoughts() {
           <h3>{thoughts.title}</h3>
           <p>{thoughts.date}</p>
           <p>{thoughts.thought}</p>
-          <p>{thoughts.feeling}</p>
+          <p className='thoughts.feeling'>
+          {thoughts.emoji}{thoughts.feeling}
+          </p>
           </div>
       ))}
     </div>

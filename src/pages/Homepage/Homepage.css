@@ -1,0 +1,33 @@
+.homepage{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.main-layout{
+    display:flex
+}
+
+.navigation-box{
+    background-color: rgb(250, 205, 138);
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px
+}
+
+.dashboard-box{
+    flex: 1;
+    padding: 5px
+}
+
+.header-box{
+    border-radius: 20px;
+    padding: 5px
+}
+.footer-box{
+    text-align: center;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}

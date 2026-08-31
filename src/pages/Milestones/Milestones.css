@@ -1,0 +1,25 @@
+
+.milestones{
+    background-color: #fffaf7;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.milestones-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.milestone-card{
+    background-color: #ffe4c4;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(5, 5, 85);
+    padding: 25px;
+}
+
+.milestones-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}

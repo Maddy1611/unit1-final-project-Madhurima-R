@@ -1,0 +1,46 @@
+
+.your-memories{
+    background-color: rgb(252, 167, 214);
+}
+
+.memory-cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.memory-card {
+    width: 220px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.memory-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.first-memory{
+    background-color: bisque;
+    border-radius: 20px;
+}
+.second-memory{
+    background-color: rgb(247, 247, 104);
+    border-radius: 20px;
+}
+
+.third-memory{
+    background-color: bisque;
+    border-radius: 20px;
+}
+
+.fourth-memory{
+    background-color:  rgb(247, 247, 104);
+    border-radius: 20px;
+}

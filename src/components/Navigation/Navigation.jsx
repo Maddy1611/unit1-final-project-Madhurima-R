@@ -9,7 +9,9 @@ import ContactUs from '../../pages/ContactUs/ContactUs'
 
 function Navigation() {
   return (
+
     <nav className='navigation'>
+      <h4>🧭Navigation</h4>
 <Link to ='/Pictures'>	📸 Pictures</Link>
 <br/>
 <br/>

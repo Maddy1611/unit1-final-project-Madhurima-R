@@ -2,7 +2,7 @@ import {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
 import Header from '../../components/Header/Header';
 
-function AddThoughts() {
+function AddThoughts({addThought}) {
     const [feeling, setFeeling] = useState("");
    const [data, setData] = useState({
         title: "",
@@ -21,10 +21,28 @@ const handleChange = (event) =>{
 
  const handleSubmit = (event) =>{
         event.preventDefault();
-        console.log(data);
+       if(!data.title || !data.thought) {
+        alert("Please enter required fields.");
+        return;
     }
+  
+  const memory = {
+        id: Date.now(),
+        ...data,
+        feeling: feeling,
+    };
+    addThought(memory);
+    alert("Memory added successfully!");
 
+    setData({
+        title: "",
+        date: "",
+        thought: "",
+        feeling: "",
+    });
 
+    setFeeling("");
+};
 
   return (
     <div>
@@ -92,7 +110,6 @@ const handleChange = (event) =>{
 <button type="submit">Save Memory</button>
 </form>
 </div>
-    
   )}
 
 export default AddThoughts

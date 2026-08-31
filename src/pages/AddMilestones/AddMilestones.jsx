@@ -2,7 +2,7 @@ import {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
 import Header from '../../components/Header/Header';
 
-function AddMilestones() {
+function AddMilestones({addMilestone}) {
     const [feeling, setFeeling] = useState("");
    const [data, setData] = useState({
         title: "",
@@ -20,8 +20,26 @@ const handleChange = (event) =>{
 
  const handleSubmit = (event) =>{
         event.preventDefault();
-        console.log(data);
+        if(!data.title) {
+        alert("Please enter required field.");
+        return;
     }
+
+    const memory = {
+        id: Date.now(),
+        ...data,
+        feeling: feeling,
+    };
+    addMilestone(memory);
+    alert("Memory added successfully!");
+
+    setData({
+        title: "",
+        date: "",
+        feeling: "",
+    });
+setFeeling("");
+ };
 
   return (
     <div>
@@ -29,7 +47,7 @@ const handleChange = (event) =>{
             <Header />
         </div>
        <h3>Add your milestones here:</h3>
-       <form className='add-milestones' onSubmit={handleSubmit}></form>
+       <form className='add-milestones' onSubmit={handleSubmit}>
 
        <label htmlFor="title">Title:</label>
             <input
@@ -76,6 +94,8 @@ const handleChange = (event) =>{
                 selectedFeeling={feeling}
                 setSelectedFeeling={setFeeling}
                 />
+        <button type="submit">Save Memory</button>
+        </form>
     </div>
   )
 }

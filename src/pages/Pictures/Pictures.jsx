@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import picturesData from '../../mock-data/mockPictures'
 import './Pictures.css'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import Button from '../../components/Buttons/Button'
 
-function Pictures() {
+function Pictures({pictures, setPictures}) {
+  const handleDelete = (id) =>{
+    setPictures(pictures.filter((picture)=> picture.id !== id));
+  };
+
   return (
     
     <div className='pictures'>
@@ -14,7 +19,7 @@ function Pictures() {
       <h3>See what you saw then:</h3>
 
     <div className='pictures-grid'>
-      {picturesData.map((picture)=>(
+      {pictures.map((picture)=>(
         <div className='picture-card' key={picture.id}>
 
           <img
@@ -29,6 +34,10 @@ function Pictures() {
           <p className='pictures.feeling'>
           {picture.emoji}{picture.feeling}
           </p>
+          <Button onClick={()=>
+            handleDelete(picture.id)}>
+              Delete
+            </Button>
           </div> 
     </div>
       ))}

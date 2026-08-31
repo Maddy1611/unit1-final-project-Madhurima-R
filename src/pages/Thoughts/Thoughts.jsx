@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import thoughtsData from '../../mock-data/mockThoughts'
 import "./Thoughts.css"
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import Button from '../../components/Buttons/Button'
 
 
-function Thoughts() {
+function Thoughts({thoughts, setThoughts}) {
+    const handleDelete = (id) =>{
+      setThoughts(thoughts.filter((thoughts)=> thoughts.id !== id));
+    };
   return (
     <div className='thoughts'>
       <div className='header-box'>
@@ -14,7 +18,7 @@ function Thoughts() {
       <h3>Feel how you felt then-</h3>
 
     <div className='thoughts-grid'>
-      {thoughtsData.map((thoughts) =>(
+      {thoughts.map((thoughts) =>(
         <div className='thoughts-card' key={thoughts.id}>
           <h3>{thoughts.title}</h3>
           <p>{thoughts.date}</p>
@@ -22,6 +26,10 @@ function Thoughts() {
           <p className='thoughts.feeling'>
           {thoughts.emoji}{thoughts.feeling}
           </p>
+          <Button onClick={()=>
+            handleDelete(thoughts.id)}>
+              Delete
+          </Button>
           </div>
       ))}
     </div>

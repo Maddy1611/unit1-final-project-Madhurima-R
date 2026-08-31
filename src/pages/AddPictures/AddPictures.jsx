@@ -1,9 +1,9 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
 import Header from '../../components/Header/Header';
+import Button from '../../components/Buttons/Button';
 
-function AddPictures() {
-
+function AddPictures({addPicture}) {
     const [feeling, setFeeling] = useState("");
     const [data, setData] = useState({
         title: "",
@@ -24,16 +24,29 @@ function AddPictures() {
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-    if(!data.title || !data.description || !feeling) {
+    if(!data.title || !data.description) {
         alert("Please enter required fields.");
         return;
     }
+
     const memory = {
+        id: Date.now(),
         ...data,
         feeling: feeling,
-    }
-    console.log(memory);
     };
+    addPicture(memory);
+    alert("Memory added successfully!");
+
+    setData({
+        title: "",
+        date: "",
+        description: "",
+        image: "null",
+        feeling: "",
+    });
+
+    setFeeling("");
+};
 
   return (
     <div>
@@ -76,7 +89,7 @@ function AddPictures() {
             <label htmlFor="image">Add a picture</label>
             <input
             id = "image"
-            name = "file"
+            name = "image"
             accept = "image/*"
             onChange={handleChange}
             placeholder="What picture do you want to add"
@@ -90,7 +103,7 @@ function AddPictures() {
             feeling="Happy"
             emoji="😊"
             selectedFeeling={feeling}
-            setSelectedFeeling={setFeeling}
+            onClick={setFeeling}
             />
             <FeelingsButton
             feeling="Sad"

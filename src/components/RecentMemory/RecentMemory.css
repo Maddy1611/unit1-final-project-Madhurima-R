@@ -4,11 +4,13 @@
 }
 
 .memory-cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     border-radius: 20px;
     padding: 20px;
+    margin-left: 15px;
 }
 
 .memory-card {

@@ -1,0 +1,8 @@
+.contact-us{
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: azure;
+    flex-direction: column;
+    gap: 10px;
+}

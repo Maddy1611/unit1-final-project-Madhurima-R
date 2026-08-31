@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import './AddThoughts.css'
 
 function AddThoughts({addThought}) {
     const [feeling, setFeeling] = useState("");
@@ -21,7 +23,7 @@ const handleChange = (event) =>{
 
  const handleSubmit = (event) =>{
         event.preventDefault();
-       if(!data.title || !data.thought) {
+       if(!data.title || !data.thought || !data.date || !feeling) {
         alert("Please enter required fields.");
         return;
     }
@@ -61,6 +63,7 @@ const handleChange = (event) =>{
             placeholder="Give your memory a name"
             required
             />
+            <br/>
 
             <label htmlFor="date">Date:</label>
             <input
@@ -71,6 +74,7 @@ const handleChange = (event) =>{
             placeholder="Date today"
             required
             />
+            <br/>
 
             <label htmlFor="thought">Thought:</label>
             <input
@@ -81,8 +85,9 @@ const handleChange = (event) =>{
             placeholder="Write your thoughts here"
             required
             />
+            <br/>
 
-            <h4>How are you feeling</h4>
+            <h4>How are you feeling:</h4>
               <FeelingsButton
                 feeling="Happy"
                 emoji="😊"
@@ -106,9 +111,12 @@ const handleChange = (event) =>{
                 emoji="💪"
                 selectedFeeling={feeling}
                 setSelectedFeeling={setFeeling}
-                />
+                /><br/><br/>
 <button type="submit">Save Memory</button>
 </form>
+<div className='footer-box'>
+            <Footer />
+        </div>
 </div>
   )}
 

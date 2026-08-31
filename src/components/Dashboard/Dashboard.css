@@ -15,7 +15,8 @@
 }
 
 .welcome-card{
-    padding: 10px;
+    padding: 5px;
+    font-size: 20px;
 }
 
 .add-memory-box{
@@ -35,6 +36,7 @@
 .add-memory-button:hover {
     background-color: gold;
 }
+
 .display-milestones{
     display: grid;
     grid-template-columns: repeat(5,1fr);

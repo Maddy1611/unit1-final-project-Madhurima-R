@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import './AddMilestones.css'
 
 function AddMilestones({addMilestone}) {
     const [feeling, setFeeling] = useState("");
@@ -20,7 +22,7 @@ const handleChange = (event) =>{
 
  const handleSubmit = (event) =>{
         event.preventDefault();
-        if(!data.title) {
+        if(!data.title || !data.date || !feeling) {
         alert("Please enter required field.");
         return;
     }
@@ -46,6 +48,7 @@ setFeeling("");
         <div className='header-box'>
             <Header />
         </div>
+
        <h3>Add your milestones here:</h3>
        <form className='add-milestones' onSubmit={handleSubmit}>
 
@@ -58,6 +61,7 @@ setFeeling("");
             placeholder="Give your milestone a name"
             required
             />
+            <br/>
 
             <label htmlFor="date">Date:</label>
             <input
@@ -93,9 +97,12 @@ setFeeling("");
                 emoji="💪"
                 selectedFeeling={feeling}
                 setSelectedFeeling={setFeeling}
-                />
+                /><br/><br/>
         <button type="submit">Save Memory</button>
         </form>
+         <div className='footer-box'>
+            <Footer />
+        </div>
     </div>
   )
 }

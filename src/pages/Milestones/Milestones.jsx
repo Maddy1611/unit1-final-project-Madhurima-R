@@ -1,5 +1,4 @@
 import React from 'react'
-import milestonesData from '../../mock-data/mockMilestone'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import "./Milestones.css"
@@ -16,7 +15,10 @@ function Milestones({milestones, setMilestones}) {
         </div>
       <h3>Look how you have grown:</h3>
       <div className='milestones-grid'>
-        {milestones.map((milestone)=> (
+        {milestones.length === 0 ?(
+          <p>No milestone have been added yet.</p>
+        ):(
+        milestones.map((milestone)=> (
           <div className='milestone-card' key={milestone.id}>
           <h2>{milestone.title}</h2>
           <p>{milestone.date}</p>
@@ -28,7 +30,8 @@ function Milestones({milestones, setMilestones}) {
               Delete
           </Button>
           </div>
-        ))}
+        ))
+      )}
       </div>
        <div className='footer-box'>
             <Footer />

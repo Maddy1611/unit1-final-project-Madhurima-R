@@ -18,7 +18,10 @@ function Thoughts({thoughts, setThoughts}) {
       <h3>Feel how you felt then-</h3>
 
     <div className='thoughts-grid'>
-      {thoughts.map((thoughts) =>(
+      {thoughts.length === 0 ?(
+          <p>No thoughts have been added yet.</p>
+        ):(
+      thoughts.map((thoughts) =>(
         <div className='thoughts-card' key={thoughts.id}>
           <h3>{thoughts.title}</h3>
           <p>{thoughts.date}</p>
@@ -31,7 +34,8 @@ function Thoughts({thoughts, setThoughts}) {
               Delete
           </Button>
           </div>
-      ))}
+      ))
+    )}
     </div>
      <div className='footer-box'>
             <Footer />

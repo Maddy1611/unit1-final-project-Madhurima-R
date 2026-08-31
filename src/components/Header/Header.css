@@ -40,6 +40,13 @@
 }
 .home-link{
     text-align: right;
+    border-radius: 20px;
+    background-color: rgb(241, 75, 228);
     right: 80px;
     position: absolute;
+    padding: 12px 20px;
+}
+
+.home-link:hover {
+    background-color: gold;
 }

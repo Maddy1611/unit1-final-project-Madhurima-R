@@ -19,7 +19,10 @@ function Pictures({pictures, setPictures}) {
       <h3>See what you saw then:</h3>
 
     <div className='pictures-grid'>
-      {pictures.map((picture)=>(
+      {pictures.length === 0 ?(
+          <p>No pictures have been added yet.</p>
+        ):(
+      pictures.map((picture)=>(
         <div className='picture-card' key={picture.id}>
 
           <img
@@ -40,7 +43,8 @@ function Pictures({pictures, setPictures}) {
             </Button>
           </div> 
     </div>
-      ))}
+      ))
+    )}
 </div>
  <div className='footer-box'>
             <Footer />

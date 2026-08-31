@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import FeelingsButton from '../../components/Buttons/FeelingsButton';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import Button from '../../components/Buttons/Button';
+import './AddPictures.css'
 
 function AddPictures({addPicture}) {
     const [feeling, setFeeling] = useState("");
@@ -13,7 +15,6 @@ function AddPictures({addPicture}) {
         feeling: "",
     })
 
-
     const handleChange = (event) =>{
         const{name, value} = event.target;
         setData ((prevData) => ({
@@ -24,7 +25,7 @@ function AddPictures({addPicture}) {
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-    if(!data.title || !data.description) {
+    if(!data.title || !data.description || !data.date || !data.image || !feeling) {
         alert("Please enter required fields.");
         return;
     }
@@ -41,7 +42,7 @@ function AddPictures({addPicture}) {
         title: "",
         date: "",
         description: "",
-        image: "null",
+        image: null,
         feeling: "",
     });
 
@@ -53,7 +54,7 @@ function AddPictures({addPicture}) {
         <div className='header-box'>
             <Header />
         </div>
-        <h3>Add your picture memory here</h3>
+        <h3>Add your picture memory here:</h3>
         <form className='add-picture-memory' onSubmit={handleSubmit}>
 
             <label htmlFor="title">Title:</label>
@@ -64,7 +65,7 @@ function AddPictures({addPicture}) {
             onChange={handleChange}
             placeholder="Give your memory a name"
             required
-            />
+            /><br/>
 
             <label htmlFor="date">Date:</label>
             <input
@@ -74,7 +75,7 @@ function AddPictures({addPicture}) {
             onChange={handleChange}
             placeholder="Date today"
             required
-            />
+            /><br/>
 
             <label htmlFor="description">Description:</label>
             <input
@@ -84,49 +85,57 @@ function AddPictures({addPicture}) {
             onChange={handleChange}
             placeholder="Tell us about this memory"
             required
-            />
+            /><br/>
 
             <label htmlFor="image">Add a picture</label>
             <input
             id = "image"
             name = "image"
+            type = "file"
             accept = "image/*"
-            onChange={handleChange}
+            onChange={(event) =>
+                setData((prevData)=>({
+                    ...prevData,
+                    image: event.target.files[0],
+                }))
+            }
             placeholder="What picture do you want to add"
             required
-            />
+            /><br/><br/>
 
-            <label>Choose a feeling</label>
+            <label>Choose a feeling:</label>
             <div className='feelings-button'>
 
             <FeelingsButton
             feeling="Happy"
             emoji="😊"
             selectedFeeling={feeling}
-            onClick={setFeeling}
+            setSelectedFeeling={setFeeling}
             />
             <FeelingsButton
             feeling="Sad"
             emoji="😢"
             selectedFeeling={feeling}
-            onClick={setFeeling}
+            setSelectedFeeling={setFeeling}
             />
             <FeelingsButton
             feeling="Excited"
             emoji="🤩"
             selectedFeeling={feeling}
-            onClick={setFeeling}
+            setSelectedFeeling={setFeeling}
             />
             <FeelingsButton
             feeling="Proud"
             emoji="💪"
             selectedFeeling={feeling}
-            onClick={setFeeling}
+            setSelectedFeeling={setFeeling}
             />
-            </div>
-
+            </div><br/><br/>
             <button type="submit">Save Memory</button>
         </form>
+        <div className='footer-box'>
+            <Footer />
+        </div>
     </div>
 )}
 

@@ -12,19 +12,19 @@ function Navigation() {
 
     <nav className='navigation'>
       <h4>🧭Navigation</h4>
-<Link to ='/Pictures'>	📸 Pictures</Link>
+<Link to ='/Pictures'>	📸 <br/> Pictures</Link>
 <br/>
 <br/>
-<Link to ='/Thoughts'> 💬 Thoughts</Link>
+<Link to ='/Thoughts'> 💬 <br/> Thoughts</Link>
 <br/>
 <br/>
-<Link to ='/Milestones'> ⭐ Milestones</Link>
+<Link to ='/Milestones'> ⭐ <br/> Milestones</Link>
 <br/>
 <br/>
-<Link to ='/AboutUs'> 👋 About Us</Link>
+<Link to ='/AboutUs'> 👋 <br/> About Us</Link>
 <br/>
 <br/>
-<Link to ='ContactUs'> 📩 Contact Us</Link>
+<Link to ='ContactUs'> 📩 <br/> Contact Us</Link>
 <br/>
     </nav>
   )

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import './ContactUs.css'
 
 function ContactUs() {
   const [data, setData] = useState({
@@ -39,7 +40,7 @@ return (
             onChange={handleChange}
             placeholder="Firstname"
             required
-            />
+            /><br/>
 
       <label htmlFor="lastname">Last Name:</label>
             <input
@@ -49,7 +50,7 @@ return (
             onChange={handleChange}
             placeholder="Lastname"
             required
-            />
+            /><br/>
 
       <label htmlFor="email">Email:</label>
             <input
@@ -59,7 +60,7 @@ return (
             onChange={handleChange}
             placeholder="Email"
             required
-            />
+            /><br/>
 
       <label htmlFor="feedback">Feedback:</label>
             <textarea
@@ -71,10 +72,10 @@ return (
             minLength={50}
             maxLength={200}
             required
-            />
+            /><br/>
 
       <button type="submit">Submit</button>
-      </form>
+      </form><br/><br/>
       <div className='footer-box'>
             <Footer />
         </div>

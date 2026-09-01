@@ -11,7 +11,7 @@ function Navigation() {
   return (
 
     <nav className='navigation'>
-      <h4>🧭Navigation</h4>
+      <h4>🧭Navigation</h4> <br/>
 <Link to ='/Pictures'>	📸 <br/> Pictures</Link>
 <br/>
 <br/>

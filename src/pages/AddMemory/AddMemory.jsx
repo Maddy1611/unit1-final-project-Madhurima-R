@@ -12,17 +12,17 @@ function AddMemory() {
         </div>
         <div className="add-memory-main">
         <h2><em>What type of memory do you want to add</em></h2>
-        <div className="memory-options">
-            <Link to="/add-pictures" className="memory-options">
-            <h3>Add picture</h3>
+        <ul className="memory-options">
+            <Link to="/add-pictures">
+            <h3><li>Add picture</li></h3>
             </Link>
-            <Link to="/add-thoughts" className="memory-options">
-            <h3>Add thoughts</h3>
+            <Link to="/add-thoughts">
+            <h3><li>Add thoughts</li></h3>
             </Link>
-            <Link to="/add-milestones" className="memory-options">
-            <h3>Add milestones</h3>
+            <Link to="/add-milestones">
+            <h3><li>Add milestones</li></h3>
             </Link>
-        </div>
+        </ul>
         </div>
         <div className='footer-box'>
             <Footer />

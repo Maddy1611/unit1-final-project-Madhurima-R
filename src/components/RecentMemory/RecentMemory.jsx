@@ -9,7 +9,7 @@ return (
 
     <div className="first-memory">
     {picturesData.slice(0,1).map((picture) => (
-        <div className="memory-card">
+        <div className="memory-card" key={picture.id}>
             <img src={picture.image} alt={picture.title}/>
             <h3>{picture.title}</h3>
             <p>{picture.description}</p>
@@ -22,7 +22,7 @@ return (
         
         <div className="second-memory">
     {thoughtsData.slice(0,1).map((thoughts) =>(
-        <div className="memory-card">
+        <div className="memory-card" key={thoughts.id}>
             <h3>{thoughts.title}</h3>
             <p>{thoughts.thought}</p>
            <div className="memory-feeling">
@@ -34,7 +34,7 @@ return (
 
         <div className="third-memory">
      {picturesData.slice(1,2).map((picture) => (
-        <div className="memory-card">
+        <div className="memory-card" key={picture.id}>
             <img src={picture.image} alt={picture.title}/>
             <h3>{picture.title}</h3>
             <p>{picture.description}</p>
@@ -47,7 +47,7 @@ return (
 
     <div className="fourth-memory">
     {thoughtsData.slice(1,2).map((thoughts) =>(
-        <div className="memory-card">
+        <div className="memory-card" key={thoughts.id}>
             <h3>{thoughts.title}</h3>
             <p>{thoughts.thought}</p>
            <div className="memory-feeling">

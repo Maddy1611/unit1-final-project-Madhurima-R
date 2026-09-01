@@ -11,7 +11,7 @@ function Header() {
       <img src = {memoryJarLogo} alt = "Memory Jar Logo" className = "memory-jar-logo" width = "80" height = "100" />
       <div className='heading-box'>
         <h1>Memory Jar 💕</h1>
-        <p><em>Preserve the memories that matter</em></p>
+        <p><em>Preserve the memories that matter!</em></p>
       </div>
       <div className='home-link'>
         <Link to="/" className='homepage-button'>

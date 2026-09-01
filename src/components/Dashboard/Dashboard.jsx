@@ -12,8 +12,8 @@ function Dashboard() {
 
     <div className='welcome-card'>
       <h2>Welcome Back!</h2>
-      <h3>Your Memory Jar is waiting</h3>
-      <p><em>Fill it with moments & memories, you never want to forget</em></p>
+      <h3>Your Memory Jar is waiting ➼ </h3>
+      <p><em>Fill it with moments & memories, you never want to forget 💕</em></p>
     </div>
 
     <div className='add-memory-box'>
@@ -29,7 +29,7 @@ function Dashboard() {
 
     <div className='display-milestones'>
       {milestonesData.slice(0,5).map((milestones) =>(
-              <div className="display-card">
+              <div className="display-card" key={milestones.id}>
                   <h3>{milestones.title}</h3>
                   <p>{milestones.date}</p>
                  <div className="memory-feeling">

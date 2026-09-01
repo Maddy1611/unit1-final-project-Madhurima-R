@@ -1,3 +1,7 @@
+
+.add-memory-page{
+    text-align: center;
+}
 .add-memory-main{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,5 +12,17 @@
     color: rgb(77, 20, 131);
     background-color: beige;
     border-radius: 20px;
-    
+    list-style-position: inside;
+    text-align: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
 }
+
+.memory-options li{
+margin: 12px 0;
+background-color: blanchedalmond;
+border-radius: 20px;
+ list-style-position: inside;
+}
+

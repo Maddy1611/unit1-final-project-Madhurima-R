@@ -1,0 +1,4 @@
+[build]
+base = "unit1-final-project-Madhurima-R"
+command = "npm run build"
+publish = "dist"

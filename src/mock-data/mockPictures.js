@@ -1,7 +1,7 @@
 
 import firstBirthdayPic from "../assets/images/first birthday pic.jpg";
 import firstTimeWalkingPic from "../assets/images/first time walking pic.jpg";
-import kindergartenPic from "../assets/images/kindergarten pic.jpg";
+import kindergartenPic from "../assets/images/Kindergarten pic.jpg";
 
 
 export const picturesData = [

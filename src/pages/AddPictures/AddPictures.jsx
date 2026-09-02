@@ -29,10 +29,10 @@ function AddPictures({addPicture}) {
         alert("Please enter required fields.");
         return;
     }
-
     const memory = {
         id: Date.now(),
         ...data,
+        image: URL.createObjectURL(data.image),
         feeling: feeling,
     };
     addPicture(memory);
